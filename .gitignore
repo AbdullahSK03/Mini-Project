@@ -1,3 +1,6 @@
 .env
 song_data.csv
 triplets_file.csv
+archive.zip
+spotify_millsongdata.csv
+*.pkl
