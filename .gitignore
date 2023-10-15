@@ -1,4 +1,3 @@
-
-tracks.csv
 *.zip
 *.csv
+.env
