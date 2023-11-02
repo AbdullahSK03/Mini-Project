@@ -43,9 +43,8 @@ To get the Spotify API, you need to follow these steps:
 <ol>
 <li>Log into the dashboard using your Spotify account.(<a href='https://developer.spotify.com/dashboard'>Link</a>)</li>
 <li>Create an app and get the app credentials (Client ID and Client Secret).</li>
-<li>Request an access token using the app credentials1.</li>
+<li>Copy your CLIENT_ID and CLIENT_SECRET and paste it to <code>new.env</code></li>
 <li>You can use your browser or a tool like Postman to make the requests.</li>
-<li>For more detailed information, you can refer to the Spotify Web API documentation.</li>
 </ol>
 
 
