@@ -10,7 +10,7 @@ https://drive.google.com/file/d/1GOCoJy9FsrCAxeMLjcstoWjA9UuJhSMS/view?usp=shari
 ### Create virtual environment using the following command in terminal by opening the folder in terminal.
 <code>pip install virtualenv</code>
 <ul>
-<!--<code>pip install -r Rrequirements.txt</code>-->
+<!---->
 <li><code>pip install streamlit</code></li>
 <li><code>pip install scikit-learn</code></li>
 <li><code>pip install pandas</code></li>
@@ -30,3 +30,15 @@ https://drive.google.com/file/d/1GOCoJy9FsrCAxeMLjcstoWjA9UuJhSMS/view?usp=shari
     <code>streamlit run main.py</code>
   </li>
 </ol>
+
+### OR
+Run this command in terminal
+<code>pip install -r Rrequirements.txt</code>
+
+This command will read the <code>Requirements.txt</code> which contains all the required libraries.
+
+## API keys
+
+
+
+
