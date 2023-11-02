@@ -5,9 +5,7 @@ A collaborative filtering based recommender system.
 https://drive.google.com/file/d/1GOCoJy9FsrCAxeMLjcstoWjA9UuJhSMS/view?usp=sharing
 
 ## Install all dependencies:
-<code>
-  pip install -r Rrequirements.txt
-</code>
+<code>pip install -r Rrequirements.txt</code>
 
 ## How to run:
 <ol>
@@ -18,8 +16,6 @@ https://drive.google.com/file/d/1GOCoJy9FsrCAxeMLjcstoWjA9UuJhSMS/view?usp=shari
   <li>
     Now open terminal in the for the folder where all files are located.
     Then run the following command in terminal
-    <code>
-      streamlit run main.py
-    </code>
+    <code>streamlit run main.py</code>
   </li>
 </ol>
