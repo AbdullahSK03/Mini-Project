@@ -1,0 +1,6 @@
+pickle
+streamlit
+spotipy
+jupyter
+pandas
+scikit-learn
