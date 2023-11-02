@@ -1,11 +1,21 @@
 # Music.AI
 A collaborative filtering based recommender system.
 
-## Dataset links:
+## Dataset links:👇👇👇👇
+
+<br/>
 https://drive.google.com/file/d/1GOCoJy9FsrCAxeMLjcstoWjA9UuJhSMS/view?usp=sharing
 
 ## Install all dependencies:
-<code>pip install -r Rrequirements.txt</code>
+### Create virtual environment using the following command in terminal by opening the folder in terminal.
+<code>pip install virtualenv</code>
+<ul>
+<!--<code>pip install -r Rrequirements.txt</code>-->
+<li><code>pip install streamlit</code></li>
+<li><code>pip install scikit-learn</code></li>
+<li><code>pip install pandas</code></li>
+<li><code>pip install spotipy</code></li>
+</ul>
 
 ## How to run:
 <ol>
@@ -16,6 +26,7 @@ https://drive.google.com/file/d/1GOCoJy9FsrCAxeMLjcstoWjA9UuJhSMS/view?usp=shari
   <li>
     Now open terminal in the for the folder where all files are located.
     Then run the following command in terminal
+    <br/>
     <code>streamlit run main.py</code>
   </li>
 </ol>
