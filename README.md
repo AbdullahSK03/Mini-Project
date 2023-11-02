@@ -40,12 +40,13 @@ This command will read the <code>Requirements.txt</code> which contains all the 
 ## API keys
 
 To get the Spotify API, you need to follow these steps:
-
-Log into the dashboard using your Spotify account.(<a href='https://developer.spotify.com/dashboard'>Link</a>)
-Create an app and get the app credentials (Client ID and Client Secret)1.
-Request an access token using the app credentials1.
-Use the access token in your API requests to access various endpoints, such as devices, albums, artists, etc1.
-You can use your browser or a tool like Postman to make the requests1. For more detailed information, you can refer to the Spotify Web API documentation.
-
+<ol>
+<li>Log into the dashboard using your Spotify account.(<a href='https://developer.spotify.com/dashboard'>Link</a>)</li>
+<li>Create an app and get the app credentials (Client ID and Client Secret).</li>
+<li>Request an access token using the app credentials1.</li>
+<li>Use the access token in your API requests to access various endpoints, such as devices, albums, artists, etc.</li>
+<li>You can use your browser or a tool like Postman to make the requests.</li>
+<li>For more detailed information, you can refer to the Spotify Web API documentation.</li>
+</ol>
 
 
