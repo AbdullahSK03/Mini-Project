@@ -3,4 +3,5 @@ spotipy
 jupyter
 pandas
 scikit-learn
-pickle5
+pickles
+python-dotenv
