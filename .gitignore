@@ -3,3 +3,4 @@ REPORT
 *.csv
 .env
 env
+credentials.py
