@@ -1,7 +1,7 @@
 # receiptify-flask
 
 ## Steps to getting spotify credentials 
-1. go to <a href='https://developer.spotify.com/dashboard/login'> Spotify dashboard</a> and make an account and a project 
+1. go to <a href='https://developer.spotify.com/dashboard/login' target='blank'> Spotify dashboard</a> and make an account and a project 
 2. go to your project and click "EDIT SETTINGS" and add your "Redirect URIs" (with ports)
 
 After you get credentials... 
