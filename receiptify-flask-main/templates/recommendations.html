@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendations</title>
+</head>
+<body>
+    <h1>Music Recommendations for {{ user_display_name }}</h1>
+    <p>Here are some songs you might like:</p>
+    <ul>
+        {% for song in recommendations %}
+            <li>{{ song }}</li>
+        {% endfor %}
+    </ul>
+    <p>Generated on: {{ currentTime }}</p>
+</body>
+</html>

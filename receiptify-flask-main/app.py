@@ -104,6 +104,10 @@ def _jinja2_filter_miliseconds(time, fmt=None):
     return str(minutes) + ":" + str(seconds ) 
 
 
+@app.route('/logout')
+def logout():
+    session.clear()
+    return redirect(url_for('login'))
 
 
 if __name__ == '__main__':
