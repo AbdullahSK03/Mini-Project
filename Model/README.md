@@ -17,6 +17,12 @@ https://drive.google.com/file/d/1GOCoJy9FsrCAxeMLjcstoWjA9UuJhSMS/view?usp=shari
 <li><code>pip install spotipy</code></li>
 </ul>
 
+### OR
+Run this command in terminal
+<code>pip install -r Rrequirements.txt</code>
+
+This command will read the <code>Requirements.txt</code> which contains all the required libraries.
+
 ## How to run:
 <ol>
   <li>Download dataset from the link above</li>
@@ -30,12 +36,6 @@ https://drive.google.com/file/d/1GOCoJy9FsrCAxeMLjcstoWjA9UuJhSMS/view?usp=shari
     <code>streamlit run main.py</code>
   </li>
 </ol>
-
-### OR
-Run this command in terminal
-<code>pip install -r Rrequirements.txt</code>
-
-This command will read the <code>Requirements.txt</code> which contains all the required libraries.
 
 ## API keys
 
