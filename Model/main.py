@@ -14,8 +14,8 @@ CLIENT_SECRET = os.getenv('CLIENT_SECRET')
 client_credentials_manager = SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
-def get_song_album_cover_url(song_name, artist_name):
-    search_query = f"track:{song_name} artist:{artist_name}"
+def get_song_album_cover_url(song_name, name_x_name):
+    search_query = f"track:{song_name} name_x:{name_x_name}"
     results = sp.search(q=search_query, type="track")
 
     if results and results["tracks"]["items"]:
@@ -31,12 +31,12 @@ def recommend(song):
     distances = sorted(list(enumerate(similarity[index])), reverse=True, key=lambda x: x[1])
     recommended_music_names = []
     recommended_music_posters = []
-    for i in distances[1:6]:
+    for i in distances[1:10]:
         # fetch the movie poster
-        artist = music.iloc[i[0]].artist
-        print(artist)
+        name_x = music.iloc[i[0]].name_x
+        print(name_x)
         print(music.iloc[i[0]].song)
-        recommended_music_posters.append(get_song_album_cover_url(music.iloc[i[0]].song, artist))
+        recommended_music_posters.append(get_song_album_cover_url(music.iloc[i[0]].song, name_x))
         recommended_music_names.append(music.iloc[i[0]].song)
 
     return recommended_music_names,recommended_music_posters
@@ -46,27 +46,27 @@ music = pickle.load(open('df.pkl','rb'))
 similarity = pickle.load(open('similarity.pkl','rb'))
 
 music_list = music['song'].values
-selected_movie = st.selectbox(
+selected_music = st.selectbox(
     "Type or select a song from the dropdown",
     music_list
 )
 
 if st.button('Show Recommendation'):
-    recommended_music_names,recommended_music_posters = recommend(selected_movie)
-    col1, col2, col3, col4, col5= st.columns(5)
-    with col1:
+    recommended_music_names,recommended_music_posters = recommend(selected_music)
+    row1, row2, row3, row4, row5 = st.columns(1)
+    with row1:
         st.text(recommended_music_names[0])
         st.image(recommended_music_posters[0])
-    with col2:
+    with row2:
         st.text(recommended_music_names[1])
         st.image(recommended_music_posters[1])
 
-    with col3:
+    with row3:
         st.text(recommended_music_names[2])
         st.image(recommended_music_posters[2])
-    with col4:
+    with row4:
         st.text(recommended_music_names[3])
         st.image(recommended_music_posters[3])
-    with col5:
+    with row5:
         st.text(recommended_music_names[4])
         st.image(recommended_music_posters[4])
