@@ -34,7 +34,6 @@ def recommend(song):
     for i in distances[1:10]:
         # fetch the movie poster
         name_x = music.iloc[i[0]].name_x
-        print(name_x)
         print(music.iloc[i[0]].song)
         recommended_music_posters.append(get_song_album_cover_url(music.iloc[i[0]].song, name_x))
         recommended_music_names.append(music.iloc[i[0]].song)
@@ -53,20 +52,20 @@ selected_music = st.selectbox(
 
 if st.button('Show Recommendation'):
     recommended_music_names,recommended_music_posters = recommend(selected_music)
-    row1, row2, row3, row4, row5 = st.columns(1)
-    with row1:
+    col1, col2, col3, col4, col5 = st.columns(5)
+    with col1:
         st.text(recommended_music_names[0])
         st.image(recommended_music_posters[0])
-    with row2:
+    with col2:
         st.text(recommended_music_names[1])
         st.image(recommended_music_posters[1])
 
-    with row3:
+    with col3:
         st.text(recommended_music_names[2])
         st.image(recommended_music_posters[2])
-    with row4:
+    with col4:
         st.text(recommended_music_names[3])
         st.image(recommended_music_posters[3])
-    with row5:
+    with col5:
         st.text(recommended_music_names[4])
         st.image(recommended_music_posters[4])
